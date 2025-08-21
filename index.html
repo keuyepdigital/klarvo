@@ -1,50 +1,110 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Klarvo Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Klarvo Studio — Break Your Bubble</title>
+  <meta name="description" content="Klarvo Studio — Agensi desain kreatif yang membantu brand berkembang dan keluar dari bubble yang menutupinya.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Klarvo Studio</h1>
-      <p class="tagline">Break your bubble</p>
-      <p class="desc">Agensi desain kreatif yang membantu brand berkembang dan keluar dari bubble yang selama ini menutupinya.</p>
-      <a href="#contact" class="btn">Hubungi Kami</a>
-    </div>
+  <header class="nav">
+    <a href="#" class="brand">Klarvo</a>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#services">Layanan</a>
+      <a href="#work">Portfolio</a>
+      <a href="#contact" class="cta">Hubungi</a>
+    </nav>
   </header>
 
-  <!-- About Section -->
-  <section class="about">
-    <h2>Tentang Kami</h2>
-    <p>Klarvo Studio hadir sebagai agensi desain kreatif untuk membantu brand tampil lebih kuat dan keluar dari batasan yang menghalangi perkembangannya.</p>
+  <!-- HERO -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero-inner">
+      <h1 class="reveal">Klarvo Studio</h1>
+      <p class="tagline reveal">Break your bubble</p>
+      <p class="desc reveal">
+        Agensi desain kreatif yang membantu brand berkembang dan keluar dari bubble yang selama ini menutupinya.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#work" class="btn">Lihat Karya</a>
+        <a href="#contact" class="btn ghost">Hubungi Kami</a>
+      </div>
+    </div>
+    <div class="hero-bg" aria-hidden="true"></div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section class="portfolio">
-    <h2>Portfolio</h2>
-    <div class="grid">
-      <img src="https://source.unsplash.com/random/400x300?creative" alt="project1">
-      <img src="https://source.unsplash.com/random/401x300?design" alt="project2">
-      <img src="https://source.unsplash.com/random/402x300?studio" alt="project3">
-      <img src="https://source.unsplash.com/random/403x300?branding" alt="project4">
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Tentang Kami</h2>
+      <p class="lead">
+        Kami membantu brand membangun identitas visual yang kuat, jelas, dan relevan. Strategi kreatif kami
+        didorong riset, dikemas dengan eksekusi desain yang rapi dan konsisten di setiap touchpoint.
+      </p>
+      <div class="stats">
+        <div class="card reveal"><span class="big">10+</span><br/>Kategori industri</div>
+        <div class="card reveal"><span class="big">30+</span><br/>Proyek diselesaikan</div>
+        <div class="card reveal"><span class="big">5★</span><br/>Kepuasan klien</div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Kontak</h2>
-    <p>Ingin bekerja sama? Hubungi kami melalui email atau WhatsApp.</p>
-    <a href="mailto:halo@klarvo.com" class="btn">Email Kami</a>
+  <!-- SERVICES -->
+  <section id="services" class="section alt">
+    <div class="wrap">
+      <h2 class="section-title">Layanan</h2>
+      <div class="grid services">
+        <div class="card reveal">
+          <h3>Brand Identity</h3>
+          <p>Logo, guideline, warna, tipografi, dan sistem visual yang solid.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Design Campaign</h3>
+          <p>Key visual, sosial media kit, konten promosi online/offline.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Web & UI</h3>
+          <p>Landing page & antarmuka yang cepat, rapi, dan mudah dipakai.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Klarvo Studio. All rights reserved.</p>
+  <!-- WORK -->
+  <section id="work" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="grid gallery">
+        <figure class="reveal"><img src="https://picsum.photos/seed/klarvo1/600/400" alt="Project 1"><figcaption>Naruna Coffee — Brand refresh</figcaption></figure>
+        <figure class="reveal"><img src="https://picsum.photos/seed/klarvo2/600/400" alt="Project 2"><figcaption>Fiora Beauty — Social media kit</figcaption></figure>
+        <figure class="reveal"><img src="https://picsum.photos/seed/klarvo3/600/400" alt="Project 3"><figcaption>Urban Run — Event campaign</figcaption></figure>
+        <figure class="reveal"><img src="https://picsum.photos/seed/klarvo4/600/400" alt="Project 4"><figcaption>Mosaic — Landing page</figcaption></figure>
+        <figure class="reveal"><img src="https://picsum.photos/seed/klarvo5/600/400" alt="Project 5"><figcaption>Okto Mart — In–store materials</figcaption></figure>
+        <figure class="reveal"><img src="https://picsum.photos/seed/klarvo6/600/400" alt="Project 6"><figcaption>Vast — Brand identity</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="wrap">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <p class="lead">Siap kolaborasi? Ceritakan kebutuhanmu.</p>
+      <div class="contact-actions">
+        <a class="btn" href="mailto:halo@klarvo.com">Email: halo@klarvo.com</a>
+        <a class="btn ghost" href="https://wa.me/6280000000000?text=Halo%20Klarvo%20Studio%2C%20saya%20ingin%20diskusi%20proyek." target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© 2025 Klarvo Studio</span>
+      <span class="dot">•</span>
+      <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
